@@ -12,10 +12,12 @@ module.exports = {
     rules: {
         'react/prop-types': 0,
         '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
         'prettier/prettier': ['error'],
         'react/jsx-one-expression-per-line': 'off',
         'no-use-before-define': 'off',
     },
+    ignorePatterns: ['dist/**/*.js'],
     parserOptions: {
         ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
         sourceType: 'module', // Allows for the use of imports
