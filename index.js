@@ -21,6 +21,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
         'react/display-name': 'off',
+        'react/display-name': 'off'
     },
     ignorePatterns: ['dist/**/*.js'],
     parserOptions: {
