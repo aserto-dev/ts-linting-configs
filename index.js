@@ -10,7 +10,7 @@ module.exports = {
         'plugin:prettier/recommended', // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
     ],
     rules: {
-        'react/prop-types': 0,
+        'react/prop-types': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
         'prettier/prettier': ['error'],
@@ -18,11 +18,11 @@ module.exports = {
         'no-use-before-define': 'off',
         '@typescript-eslint/no-var-requires': 'off',
         'react/no-unescaped-entities': 'off',
-        'react-hooks/exhaustive-deps': 'off',
+        'react-hooks/exhaustive-deps': 'warn',
         '@typescript-eslint/no-non-null-assertion': 'off',
         'react/display-name': 'off',
-        'react/display-name': 'off',
-        '@typescript-eslint/no-empty-function': 'off'
+        '@typescript-eslint/no-empty-function': 'off',
+        '@typescript-eslint/no-inferrable-types': 'off'
     },
     ignorePatterns: ['dist/**/*.js'],
     parserOptions: {
