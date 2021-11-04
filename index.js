@@ -1,3 +1,4 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
     parser: '@typescript-eslint/parser', // Specifies the ESLint parser
     extends: [
@@ -12,7 +13,6 @@ module.exports = {
     rules: {
         'react/prop-types': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/ban-ts-comment': 'off',
         'prettier/prettier': ['error'],
         'react/jsx-one-expression-per-line': 'off',
         'no-use-before-define': 'off',
