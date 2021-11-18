@@ -11,6 +11,7 @@ module.exports = {
     'plugin:prettier/recommended', // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
   rules: {
+    eqeqeq: 'always',
     'react/prop-types': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/consistent-type-assertions': [
@@ -18,6 +19,21 @@ module.exports = {
       {
         assertionStyle: 'as',
         objectLiteralTypeAssertions: 'allow-as-parameter',
+      },
+    ],
+    '@typescript-eslint/naming-convention': [
+      1,
+      {
+        selector: 'property',
+        format: ['strictCamelCase'],
+        filter: {
+          regex: '[- ]',
+          match: false,
+        },
+      },
+      {
+        selector: 'interface',
+        format: ['PascalCase'],
       },
     ],
     'prettier/prettier': ['error'],
