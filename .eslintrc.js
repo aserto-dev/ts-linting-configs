@@ -12,8 +12,7 @@ module.exports = {
   ],
   rules: {
     eqeqeq: 'always',
-    'react/prop-types': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'no-use-before-define': 'off',
     '@typescript-eslint/consistent-type-assertions': [
       'error',
       {
@@ -21,6 +20,7 @@ module.exports = {
         objectLiteralTypeAssertions: 'allow-as-parameter',
       },
     ],
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/naming-convention': [
       1,
       {
@@ -36,17 +36,17 @@ module.exports = {
         format: ['PascalCase'],
       },
     ],
-    'prettier/prettier': ['error'],
-    'react/jsx-one-expression-per-line': 'off',
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-var-requires': 'off',
-    'react/no-unescaped-entities': 'off',
-    'react-hooks/exhaustive-deps': 'warn',
-    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
-    '@typescript-eslint/no-non-null-assertion': 'off',
-    'react/display-name': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    'prettier/prettier': ['error'],
+    'react/display-name': 'off',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/jsx-one-expression-per-line': 'off',
+    'react/no-unescaped-entities': 'off',
+    'react/prop-types': 'off',
   },
   ignorePatterns: ['dist/**/*.js'],
   parserOptions: {
