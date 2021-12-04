@@ -1,34 +1,35 @@
 {
   "name": "@aserto/ts-linting-configs",
-  "version": "1.1.0",
-  "main": "index.js",
+  "version": "2.0.0",
+  "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ."
   },
   "files": [
-    "index.js",
+    ".eslintrc.js",
     "prettier.config.js"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aserto-dev/ts-linting-configs.git"
   },
-  "author": "Eduardo Pedroso",
+  "author": "Aserto",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/aserto-dev/ts-linting-configs/issues"
   },
   "homepage": "https://github.com/aserto-dev/ts-linting-configs#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.21.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.2"
-  }
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.2"
+  },
+  "prettier": "./prettier.config.js"
 }
