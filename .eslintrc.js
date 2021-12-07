@@ -10,6 +10,7 @@ module.exports = {
     // Make sure this is always the last configuration in the extends array.
     'plugin:prettier/recommended',
   ],
+  plugins: ['typescript-sort-keys'],
   rules: {
     eqeqeq: ['error', 'always'],
     'no-use-before-define': 'off',
@@ -47,6 +48,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'react/no-unescaped-entities': 'off',
     'react/prop-types': 'off',
+    'typescript-sort-keys/string-enum': ['error', 'asc', { caseSensitive: false, natural: true }],
   },
   ignorePatterns: ['dist/**/*.js'],
   parserOptions: {
