@@ -48,7 +48,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'react/no-unescaped-entities': 'off',
     'react/prop-types': 'off',
-    'typescript-sort-keys/string-enum': 'error',
+    'typescript-sort-keys/string-enum': ['error', 'asc', { caseSensitive: false, natural: true }],
   },
   ignorePatterns: ['dist/**/*.js'],
   parserOptions: {
