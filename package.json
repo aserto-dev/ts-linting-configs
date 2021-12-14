@@ -1,6 +1,6 @@
 {
   "name": "@aserto/ts-linting-configs",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "main": ".eslintrc.js",
   "scripts": {
     "lint": "eslint ."
