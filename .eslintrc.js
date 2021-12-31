@@ -10,9 +10,10 @@ module.exports = {
     // Make sure this is always the last configuration in the extends array.
     'plugin:prettier/recommended',
   ],
-  plugins: ['typescript-sort-keys'],
+  plugins: ['simple-import-sort', 'typescript-sort-keys'],
   rules: {
     eqeqeq: ['error', 'always'],
+    'no-console': 'warn',
     'no-use-before-define': 'off',
     '@typescript-eslint/consistent-type-assertions': [
       'error',
@@ -49,6 +50,27 @@ module.exports = {
     'react/jsx-curly-brace-presence': 'error',
     'react/no-unescaped-entities': 'off',
     'react/prop-types': 'off',
+    'simple-import-sort/imports': [
+      'warn',
+      {
+        groups: [
+          // Side effect imports.
+          ['^\\u0000'],
+          [
+            // Packages that start with a letter, digit, or underscore
+            '^\\w',
+            // Packages that start with a `@`
+            '^@',
+          ],
+          // Absolute imports and other imports such as Vue-style `@/foo`.
+          // Anything not matched in another group.
+          ['^'],
+          // Relative imports.
+          // Anything that starts with a dot.
+          ['^\\.'],
+        ],
+      },
+    ],
     'typescript-sort-keys/string-enum': ['error', 'asc', { caseSensitive: false, natural: true }],
   },
   ignorePatterns: ['dist/**/*.js'],
