@@ -12,8 +12,11 @@ module.exports = {
   ],
   plugins: ['simple-import-sort', 'typescript-sort-keys'],
   rules: {
+    curly: 'error',
     eqeqeq: ['error', 'always'],
     'no-console': 'warn',
+    'no-debugger': 'warn',
+    'no-duplicate-case': 'error',
     'no-use-before-define': 'off',
     '@typescript-eslint/consistent-type-assertions': [
       'error',
