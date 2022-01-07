@@ -51,6 +51,14 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-curly-brace-presence': 'error',
+    'react/jsx-sort-props': [
+      'warn',
+      {
+        callbacksLast: true,
+        ignoreCase: true,
+        reservedFirst: true,
+      },
+    ],
     'react/no-unescaped-entities': 'off',
     'react/prop-types': 'off',
     'simple-import-sort/imports': [
