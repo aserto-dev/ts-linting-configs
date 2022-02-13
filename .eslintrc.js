@@ -3,12 +3,13 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
     'prettier',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
     // This will display prettier errors as ESLint errors.
     // Make sure this is always the last configuration in the extends array.
     'plugin:prettier/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:storybook/recommended',
   ],
   plugins: ['simple-import-sort', 'typescript-sort-keys'],
   rules: {
