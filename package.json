@@ -38,5 +38,6 @@
   "prettier": "./prettier.config.js",
   "devDependencies": {
     "@babel/core": "^7.22.5"
-  }
+  },
+  "packageManager": "yarn@3.6.1"
 }
