@@ -6,6 +6,7 @@ import { fixupConfigRules } from '@eslint/compat'
 import { FlatCompat } from '@eslint/eslintrc'
 import js from '@eslint/js'
 import tsParser from '@typescript-eslint/parser'
+import unusedImports from "eslint-plugin-unused-imports";
 
 
 const __filename = fileURLToPath(import.meta.url)
@@ -33,6 +34,7 @@ export default [
         plugins: {
             'simple-import-sort': simpleImportSort,
             'typescript-sort-keys': typescriptSortKeys,
+            'unused-imports': unusedImports,
         },
 
         languageOptions: {
@@ -119,6 +121,17 @@ export default [
                     natural: true,
                 },
             ],
+            "no-unused-vars": "off", // or "@typescript-eslint/no-unused-vars": "off",
+            "unused-imports/no-unused-imports": "error",
+            "unused-imports/no-unused-vars": [
+                "warn",
+                {
+                    "vars": "all",
+                    "varsIgnorePattern": "^_",
+                    "args": "after-used",
+                    "argsIgnorePattern": "^_",
+                },
+            ]
         },
     },
 ]
