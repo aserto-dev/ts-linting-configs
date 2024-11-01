@@ -48,7 +48,12 @@ export default [
             'no-debugger': 'warn',
             'no-duplicate-case': 'error',
             'no-use-before-define': 'off',
-
+            '@typescript-eslint/no-unused-expressions': ['error',
+                {
+                    "allowShortCircuit": true,
+                    "allowTernary": true
+                }
+            ],
             '@typescript-eslint/consistent-type-assertions': [
                 'error',
                 {
