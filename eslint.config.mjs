@@ -17,7 +17,7 @@ const compat = new FlatCompat({
 
 export default [
   {
-    ignores: ['dist/**/*.js', 'eslint.config.mjs', 'node_modules'],
+    ignores: ['dist/**/*.js', 'eslint.config.*', 'node_modules', '.yarn'],
   },
   ...fixupConfigRules(
     compat.extends(
