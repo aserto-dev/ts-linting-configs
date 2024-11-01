@@ -6,7 +6,6 @@ import { fixupConfigRules } from '@eslint/compat'
 import { FlatCompat } from '@eslint/eslintrc'
 import js from '@eslint/js'
 import tsParser from '@typescript-eslint/parser'
-import storybook from 'eslint-plugin-storybook'
 
 
 const __filename = fileURLToPath(import.meta.url)
@@ -30,10 +29,6 @@ export default [
             'plugin:react-hooks/recommended',
         )
     ),
-    ...storybook.configs['flat/recommended'],
-    {
-        files: ['**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
-    },
     {
         plugins: {
             'simple-import-sort': simpleImportSort,
