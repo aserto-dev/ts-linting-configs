@@ -1,12 +1,12 @@
 {
   "name": "@aserto/ts-linting-configs",
-  "version": "2.7.0",
-  "main": ".eslintrc.js",
+  "version": "3.0.0",
+  "main": "eslint.config.mjs",
   "scripts": {
     "lint": "eslint ."
   },
   "files": [
-    ".eslintrc.js",
+    "eslint.config.mjs",
     "prettier.config.js"
   ],
   "repository": {
@@ -20,24 +20,27 @@
   },
   "homepage": "https://github.com/aserto-dev/ts-linting-configs#readme",
   "dependencies": {
-    "@babel/eslint-parser": "^7.16.3",
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
-    "@typescript-eslint/utils": "^5.11.0",
-    "eslint": "^8.2.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.27.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-storybook": "^0.6.12",
-    "eslint-plugin-typescript-sort-keys": "^2.1.0",
-    "prettier": "^2.4.1",
-    "typescript": "^4.5.2"
+    "@babel/eslint-parser": "^7.25.9",
+    "@eslint/compat": "^1.2.2",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@typescript-eslint/parser": "^8.12.2",
+    "@typescript-eslint/utils": "^8.12.2",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-typescript-sort-keys": "^3.3.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "prettier": "^3.3.3",
+    "typescript": "^4.9.0"
   },
   "prettier": "./prettier.config.js",
   "devDependencies": {
-    "@babel/core": "^7.22.5"
+    "@babel/core": "^7.26.0"
   },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@4.5.1"
 }
